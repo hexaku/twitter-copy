@@ -1,5 +1,39 @@
 * {
   margin: 0;
   padding: 0;
+  /*
+  background-color: #15202B;
+  color: white;
+  */
   box-sizing: border-box;
+}
+
+
+
+.navbar-svg {
+  height: 25px;
+}
+
+.tweet-svg {
+  height: 15px;
+}
+
+.banner {
+  background-color: salmon;
+}
+
+.main-center-div {
+  background-color: #90be6d;
+}
+
+.main-sidebar-div {
+  background-color: #219ebc;
+}
+
+body {
+  display: flex;
+}
+
+.main-container {
+  display: flex;
 }
