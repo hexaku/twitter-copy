@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +9,16 @@
   color: white;
   */
   box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-
+img {
+  border-radius: 50%;
+}
 
 .navbar-svg {
-  height: 25px;
+  height: 30px;
+  fill: white;
 }
 
 .tweet-svg {
@@ -20,6 +27,8 @@
 
 .banner {
   background-color: salmon;
+  min-width: 275px;
+  padding: 0 10px;
 }
 
 .main-center-div {
@@ -36,4 +45,61 @@ body {
 
 .main-container {
   display: flex;
+}
+
+.navbar-logo {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.navbar-main-button > div {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.navbar-main-button-title {
+  font-weight: bolder;
+  font-size: 19px;
+  margin-left: 15px;
+}
+
+.navbar-button-span-div {
+  border-radius: 50px;
+  background-color: rgb(29, 161, 242);
+  text-align: center;
+  height: 48px;
+  width: 200px;
+}
+
+.navbar-button-span-div > span {
+  display: inline-block;
+  margin-top: 13px;
+}
+
+.side-profile-div-button {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.side-profile-div-main {
+  margin-left: 12px;
+}
+
+.side-profile-name {
+  font-weight: bolder;
+}
+
+.side-profile-id > span {
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+.side-profile-div-etc {
+  margin-left: 100px
+}
+
+.side-profile-div-etc > svg {
+  height: 18.5px;
 }
