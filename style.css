@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 * {
   margin: 0;
@@ -16,13 +16,20 @@ img {
   border-radius: 50%;
 }
 
+/* ----Banner / Header ---- */
+
 .navbar-svg {
   height: 30px;
   fill: white;
 }
 
 .tweet-svg {
-  height: 15px;
+  height: 22px;
+}
+
+.dots-svg {
+  height: 22px;
+  fill: white;
 }
 
 .banner {
@@ -33,6 +40,7 @@ img {
 
 .main-center-div {
   background-color: #90be6d;
+  border: 1px solid rgb(136, 153, 166);
 }
 
 .main-sidebar-div {
@@ -96,10 +104,133 @@ body {
   font-size: 14px;
 }
 
+/*
+.grey {
+  color: rgb(136, 153, 166);
+}*/
+
 .side-profile-div-etc {
   margin-left: 100px
 }
 
 .side-profile-div-etc > svg {
   height: 18.5px;
+}
+
+/* ---- Main center ---- */
+
+.main-center-div {
+  width: 850px;
+}
+
+.main-center-title-div {
+  border: 1px solid rgb(136, 153, 166);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.main-center-input-div {
+  border: 1px solid rgb(136, 153, 166);
+  padding: 6px 16px;
+}
+
+.main-center-input {
+  display: flex;
+}
+
+.main-center-input-profile {
+  margin-right: 15px;
+}
+
+.main-center-input-container-box-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-center-input-box {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.main-center-input-box-news > span {
+  font-size: 22px;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.main-center-input-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  height: 45px;
+}
+
+.main-center-input-footer-options {
+  display: flex;
+  align-items: center;
+}
+
+.main-center-input-footer-options > div {
+  margin-right: 15px;
+}
+
+.main-center-input-footer-button {
+  border-radius: 25px;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  background-color: #1DA1F2;
+  font-weight: 500;
+  color: white;
+}
+
+.main-center-separator-div {
+  height: 12px;
+  border-bottom: 1px solid rgb(136, 153, 166);
+}
+
+.main-center-thread-tweet {
+  padding: 10px 16px;
+  display: flex;
+  border-bottom: 1px solid rgb(136, 153, 166);
+}
+
+.main-center-thread-tweet-box {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.main-center-tweet-title-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-center-tweet-title {
+  display: flex;
+  align-items: center;
+}
+
+.main-center-tweet-title > div {
+  margin-right: 4px;
+}
+
+.main-center-tweet-footer-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tweet-name-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.main-center-tweet-container-footer {
+  width: 85%;
+  margin-top: 15px;
 }
