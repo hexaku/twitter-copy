@@ -4,27 +4,46 @@
 * {
   margin: 0;
   padding: 0;
-  /*
-  background-color: #15202B;
+  /*background-color: #15202B;*/
   color: white;
-  */
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #15202B;
 }
 
 img {
   border-radius: 50%;
 }
 
+.active {
+  color: rgb(29, 161, 242);
+}
+
 /* ----Banner / Header ---- */
 
-.navbar-svg {
+.active-svg {
+  height: 26.5px;
+  fill: #1DA1F2;
+}
+
+.twitter-svg {
   height: 30px;
+  fill: white;
+}
+
+.navbar-svg {
+  height: 26.5px;
   fill: white;
 }
 
 .tweet-svg {
   height: 22px;
+  fill: #1DA1F2;
 }
 
 .dots-svg {
@@ -38,18 +57,8 @@ img {
 }
 
 .banner {
-  background-color: salmon;
   min-width: 275px;
   padding: 0 10px;
-}
-
-.main-center-div {
-  background-color: #90be6d;
-  border: 1px solid rgb(136, 153, 166);
-}
-
-.main-sidebar-div {
-  background-color: #219ebc;
 }
 
 body {
@@ -62,32 +71,27 @@ body {
 
 .navbar-logo {
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .navbar-main-button > div {
   display: flex;
   align-items: center;
-  padding: 8px 0;
+  padding: 14px 0;
 }
 
 .navbar-main-button-title {
   font-weight: bolder;
   font-size: 19px;
-  margin-left: 15px;
+  margin-left: 17px;
 }
 
 .navbar-button-span-div {
   border-radius: 50px;
   background-color: rgb(29, 161, 242);
   text-align: center;
-  height: 48px;
-  width: 200px;
-}
-
-.navbar-button-span-div > span {
-  display: inline-block;
-  margin-top: 13px;
+  margin-right: 40px;
+  padding: 15px 5px;
 }
 
 .side-profile-div-button {
@@ -109,10 +113,9 @@ body {
   font-size: 14px;
 }
 
-/*
 .grey {
   color: rgb(136, 153, 166);
-}*/
+}
 
 .side-profile-div-etc {
   margin-left: 100px
@@ -125,7 +128,9 @@ body {
 /* ---- Main center ---- */
 
 .main-center-div {
+  border: 1px solid rgb(136, 153, 166);
   width: 850px;
+  max-width: 600px;
 }
 
 .main-center-title-div {
@@ -162,9 +167,9 @@ body {
 }
 
 .main-center-input-box-news > span {
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Roboto";
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .main-center-input-footer {
@@ -242,6 +247,7 @@ body {
 
 .main-sidebar-div {
   padding-left: 30px;
+  max-width: 380px;
 }
 
 .main-sidebar-container-search {
@@ -290,11 +296,13 @@ body {
 
 .tendances-element, .suggestions-element {
   padding: 11px 15px;
-  border: 1px solid rgb(136, 153, 166);
+  border-bottom: 1px solid rgb(136, 153, 166);
+  background-color: #192734;
 }
 
-.main-sidebar-tendances-more {
+.main-sidebar-tendances-more, .main-sidebar-suggestions-more {
   border-radius: 0 0 20px 20px;
+  border: none;
 }
 
 .main-sidebar-suggestions-header {
@@ -321,8 +329,12 @@ body {
 
 .main-sidebar-suggestions-card-body-button {
   padding: 6px 15px;
-  border: 1px solid black;
+  border: 1px solid rgb(29, 161, 242);
   border-radius: 18px;
+}
+
+.main-sidebar-suggestions-card-body-button > div > span {
+  color: #1DA1F2;
 }
 
 .main-sidebar-suggestions-card-id > span {
@@ -330,12 +342,7 @@ body {
   font-size: 13px;
 }
 
-.main-sidebar-suggestions-more {
-  border-radius: 0 0 20px 20px;
-}
-
 .main-sidebar-footer-nav {
-  max-width: 400px;
   display: flex;
   flex-wrap: wrap;
 }
