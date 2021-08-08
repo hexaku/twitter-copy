@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 * {
   margin: 0;
@@ -44,6 +44,11 @@ img {
 .tweet-svg {
   height: 22px;
   fill: #1DA1F2;
+}
+
+.options-svg {
+  height: 18.75px;
+  fill:rgb(136, 153, 166);
 }
 
 .dots-svg {
@@ -128,21 +133,28 @@ body {
 /* ---- Main center ---- */
 
 .main-center-div {
-  border: 1px solid rgb(136, 153, 166);
+  border-bottom: 1px solid #344452;
+  border-left: 1px solid #344452;
+  border-right: 1px solid #344452;
   width: 850px;
   max-width: 600px;
 }
 
 .main-center-title-div {
-  border: 1px solid rgb(136, 153, 166);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px;
+  padding: 12px 16px;
+}
+
+.main-center-title > h2 > span {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .main-center-input-div {
-  border: 1px solid rgb(136, 153, 166);
+  border-top: 1px solid #344452;
+  border-bottom: 1px solid #344452;
   padding: 6px 16px;
 }
 
@@ -186,27 +198,31 @@ body {
 }
 
 .main-center-input-footer-options > div {
-  margin-right: 15px;
+  margin-right: 17px;
 }
 
 .main-center-input-footer-button {
   border-radius: 25px;
   padding: 12px 16px;
   margin-bottom: 15px;
-  background-color: #1DA1F2;
+  background-color: #19608E;
   font-weight: 500;
-  color: white;
+}
+
+.main-center-input-footer-button > span {
+  color: #878E95;
 }
 
 .main-center-separator-div {
   height: 12px;
-  border-bottom: 1px solid rgb(136, 153, 166);
+  border-bottom: 1px solid #344452;
+  background-color: #192734;
 }
 
 .main-center-thread-tweet {
   padding: 10px 16px;
   display: flex;
-  border-bottom: 1px solid rgb(136, 153, 166);
+  border-bottom: 1px solid #344452;
 }
 
 .main-center-thread-tweet-box {
@@ -234,10 +250,28 @@ body {
   justify-content: space-between;
 }
 
+.main-center-tweet-id > span {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.main-center-tweet-dot > span {
+  vertical-align: super;
+  font-weight: 100;
+}
+
+.main-center-tweet-date > span {
+  font-weight: 100;
+}
+
 .tweet-name-link {
   text-decoration: none;
   color: white;
   font-weight: 400;
+}
+
+.tweet-name-link > span {
+  font-weight: 600;
 }
 
 .main-center-tweet-container-footer {
@@ -251,7 +285,8 @@ body {
 }
 
 .main-sidebar-container-search {
-  padding: 12px 0;
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 
 .main-sidebar-search {
@@ -272,6 +307,10 @@ body {
   margin-left: 20px;
 }
 
+.main-sidebar-search-bar > div {
+  font-weight: 300;
+}
+
 .main-sidebar-tendances, .main-sidebar-suggestions {
   max-width: 350px;
   margin-bottom: 20px;
@@ -286,23 +325,35 @@ body {
 
 .main-sidebar-tendances-card-categorie > span, 
 .main-sidebar-tendances-card-count > span {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 100;
 }
 
+.main-sidebar-tendances-card-name > span {
+  font-weight: 600;
+  font-size: 15px;
+}
+
 .main-sidebar-tendances-header-title > span {
-  font-size: 21px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .tendances-element, .suggestions-element {
   padding: 11px 15px;
-  border-bottom: 1px solid rgb(136, 153, 166);
+  border-bottom: 1px solid #344452;
   background-color: #192734;
 }
 
 .main-sidebar-tendances-more, .main-sidebar-suggestions-more {
   border-radius: 0 0 20px 20px;
   border: none;
+}
+
+.main-sidebar-tendances-more > span, .main-sidebar-suggestions-more > span {
+  font-size: 15px;
+  font-weight: 100;
+  color: rgb(29, 161, 242);
 }
 
 .main-sidebar-suggestions-header {
@@ -351,7 +402,9 @@ body {
   font-size: 13px;
   text-decoration: none;
   font-weight: 100;
-  padding-right: 12px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .copyright {
