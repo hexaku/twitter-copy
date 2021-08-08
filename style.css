@@ -74,15 +74,45 @@ body {
   display: flex;
 }
 
+.navbar {
+  margin-bottom: 80px;
+}
+
 .navbar-logo {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
+.navbar-logo-button {
+  padding: 10px;
+  border-radius: 50%;
+  padding: 22px 10px 8px 10px;
+}
+
+.navbar-logo-button:hover {
+  background-color: #162D40;
+  cursor: pointer;
+}
+
 .navbar-main-button > div {
   display: flex;
   align-items: center;
-  padding: 14px 0;
+  padding: 10px;
+  width: fit-content;
+}
+
+.navbar-main-button > div:hover {
+  border-radius: 35px;
+  cursor: pointer;
+  background-color: #162D40;
+}
+
+.navbar-main-button > div:hover > svg {
+  fill: rgb(29, 161, 242);
+}
+
+.navbar-main-button > div:hover > span {
+  color: rgb(29, 161, 242);
 }
 
 .navbar-main-button-title {
@@ -99,10 +129,20 @@ body {
   padding: 15px 5px;
 }
 
+.navbar-button-span-div:hover {
+  cursor: pointer;
+}
+
 .side-profile-div-button {
   display: flex;
   align-items: center;
   padding: 12px;
+  border-radius: 50px;
+}
+
+.side-profile-div-button:hover {
+  background-color: #162D40;
+  cursor: pointer;
 }
 
 .side-profile-div-main {
@@ -114,8 +154,8 @@ body {
 }
 
 .side-profile-id > span {
-  font-family: "Roboto";
   font-size: 14px;
+  font-weight: 100;
 }
 
 .grey {
@@ -150,6 +190,16 @@ body {
 .main-center-title > h2 > span {
   font-size: 20px;
   font-weight: 600;
+}
+
+.main-center-img {
+  border-radius: 50%;
+  padding: 6px 8px 4px 8px;
+}
+
+.main-center-img:hover {
+  cursor: pointer;
+  background-color: #162D40;
 }
 
 .main-center-input-div {
@@ -199,6 +249,13 @@ body {
 
 .main-center-input-footer-options > div {
   margin-right: 17px;
+  border-radius: 50%;
+  padding: 8px 9px 6px 9px;
+}
+
+.main-center-input-footer-options > div:hover {
+  cursor: pointer;
+  background-color: #162D40;
 }
 
 .main-center-input-footer-button {
@@ -212,6 +269,8 @@ body {
 .main-center-input-footer-button > span {
   color: #878E95;
 }
+
+
 
 .main-center-separator-div {
   height: 12px;
@@ -250,6 +309,47 @@ body {
   justify-content: space-between;
 }
 
+.main-center-tweet-footer-div > div {
+  border-radius: 50%;
+  padding: 6px 7px 4px 7px;
+}
+
+.main-center-tweet-footer-div > div:hover {
+  cursor: pointer;
+}
+
+.main-center-tweet-footer-answer:hover {
+  background-color: #162D40;
+}
+
+.main-center-tweet-footer-answer:hover > svg {
+  fill: rgb(29, 161, 242);
+}
+
+.main-center-tweet-footer-retweet:hover {
+  background-color: #1B3637;
+}
+
+.main-center-tweet-footer-retweet:hover > svg {
+  fill: #17B760;
+}
+
+.main-center-tweet-footer-like:hover {
+  background-color: #302737;
+}
+
+.main-center-tweet-footer-like:hover > svg {
+  fill: #BF2557;
+}
+
+.main-center-tweet-footer-share:hover {
+  background-color: #162D40;
+}
+
+.main-center-tweet-footer-share:hover > svg {
+  fill: rgb(29, 161, 242);
+}
+
 .main-center-tweet-id > span {
   font-weight: 100;
   font-size: 15px;
@@ -264,6 +364,20 @@ body {
   font-weight: 100;
 }
 
+.main-center-tweet-etc {
+  border-radius: 50%;
+  padding: 5px 5px 3px 5px;
+}
+
+.main-center-tweet-etc:hover {
+  background-color: #162D40;
+  cursor: pointer;
+}
+
+.main-center-tweet-etc:hover > svg {
+  fill: rgb(29, 161, 242);
+}
+
 .tweet-name-link {
   text-decoration: none;
   color: white;
@@ -272,6 +386,10 @@ body {
 
 .tweet-name-link > span {
   font-weight: 600;
+}
+
+.tweet-name-link:hover {
+  text-decoration: underline;
 }
 
 .main-center-tweet-container-footer {
@@ -321,6 +439,9 @@ body {
   align-items: center;
   justify-content: space-between;
   border-radius: 20px 20px 0 0;
+  padding: 11px 15px;
+  border-bottom: 1px solid #344452;
+  background-color: #192734;
 }
 
 .main-sidebar-tendances-card-categorie > span, 
@@ -345,6 +466,11 @@ body {
   background-color: #192734;
 }
 
+.tendances-element:hover, .suggestions-element:hover {
+  background-color: #202E3A;
+  cursor: pointer;
+}
+
 .main-sidebar-tendances-more, .main-sidebar-suggestions-more {
   border-radius: 0 0 20px 20px;
   border: none;
@@ -356,8 +482,21 @@ body {
   color: rgb(29, 161, 242);
 }
 
+.main-sidebar-tendances-header-settings {
+  border-radius: 50%;
+  padding: 7px 7px 5px 7px;
+}
+
+.main-sidebar-tendances-header-settings:hover {
+  cursor: pointer;
+  background-color: #162D40;
+}
+
 .main-sidebar-suggestions-header {
   border-radius: 20px 20px 0 0;
+  padding: 11px 15px;
+  border-bottom: 1px solid #344452;
+  background-color: #192734;
 }
 
 .main-sidebar-suggestions-title > span {
@@ -384,13 +523,22 @@ body {
   border-radius: 18px;
 }
 
+.main-sidebar-suggestions-card-body-button:hover {
+  background-color: #20394D;
+  cursor: pointer;
+}
+
 .main-sidebar-suggestions-card-body-button > div > span {
   color: #1DA1F2;
 }
 
 .main-sidebar-suggestions-card-id > span {
-  font-family: 'Roboto';
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.main-sidebar-suggestions-card-title > span {
+  font-weight: 500;
 }
 
 .main-sidebar-footer-nav {
@@ -405,6 +553,11 @@ body {
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.main-sidebar-footer-nav > a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(136, 153, 166);
 }
 
 .copyright {
