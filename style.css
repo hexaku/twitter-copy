@@ -32,6 +32,11 @@ img {
   fill: white;
 }
 
+.search-svg {
+  height: 18px;
+  fill: white;
+}
+
 .banner {
   background-color: salmon;
   min-width: 275px;
@@ -234,3 +239,117 @@ body {
   width: 85%;
   margin-top: 15px;
 }
+
+.main-sidebar-div {
+  padding-left: 30px;
+}
+
+.main-sidebar-container-search {
+  padding: 12px 0;
+}
+
+.main-sidebar-search {
+  display: flex;
+  align-items: center;
+  background-color: #253341;
+  max-width: 350px;
+  padding: 12px;
+  border-radius: 30px;
+}
+
+.main-sidebar-search-loupe {
+  margin-left: 8px;
+  margin-top: 2px;
+}
+
+.main-sidebar-search-bar {
+  margin-left: 20px;
+}
+
+.main-sidebar-tendances, .main-sidebar-suggestions {
+  max-width: 350px;
+  margin-bottom: 20px;
+}
+
+.main-sidebar-tendances-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px 20px 0 0;
+}
+
+.main-sidebar-tendances-card-categorie > span, 
+.main-sidebar-tendances-card-count > span {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.main-sidebar-tendances-header-title > span {
+  font-size: 21px;
+}
+
+.tendances-element, .suggestions-element {
+  padding: 11px 15px;
+  border: 1px solid rgb(136, 153, 166);
+}
+
+.main-sidebar-tendances-more {
+  border-radius: 0 0 20px 20px;
+}
+
+.main-sidebar-suggestions-header {
+  border-radius: 20px 20px 0 0;
+}
+
+.main-sidebar-suggestions-title > span {
+  font-size: 21px;
+}
+
+.main-sidebar-suggestions-card, .main-sidebar-suggestions-card-body {
+  display: flex;
+  align-items: center;
+}
+
+.main-sidebar-suggestions-card-picture {
+  margin-right: 10px;
+}
+
+.main-sidebar-suggestions-card-body {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.main-sidebar-suggestions-card-body-button {
+  padding: 6px 15px;
+  border: 1px solid black;
+  border-radius: 18px;
+}
+
+.main-sidebar-suggestions-card-id > span {
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+.main-sidebar-suggestions-more {
+  border-radius: 0 0 20px 20px;
+}
+
+.main-sidebar-footer-nav {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-sidebar-footer-nav > a {
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 100;
+  padding-right: 12px;
+}
+
+.copyright {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+
