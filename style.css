@@ -1,17 +1,23 @@
+/* ---- Fonts (Ubuntu, Roboto) ---- */
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+
+/* ---- General styles ---- */
 
 * {
   margin: 0;
   padding: 0;
-  /*background-color: #15202B;*/
   color: white;
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
+  /* Variables CSS */
+  --blue-color: rgb(26,161,242);
+  --blue-hover-background: #162D40;
 }
 
 body {
-  display: flex;
   justify-content: center;
   background-color: #15202B;
 }
@@ -21,61 +27,55 @@ img {
 }
 
 .active {
-  color: rgb(29, 161, 242);
+  color: var(--blue-color);
 }
 
 .hidden {
   display: none;
 }
 
-/* ----Banner / Header ---- */
-
-.active-svg {
-  height: 26.5px;
-  fill: #1DA1F2;
+.flex {
+  display: flex;
 }
 
-.twitter-svg {
-  height: 30px;
+.white-svg {
   fill: white;
 }
 
-.navbar-svg {
-  height: 26.5px;
-  fill: white;
+.blue-svg {
+  fill: var(--blue-color);
 }
 
-.tweet-svg {
-  height: 22px;
-  fill: #1DA1F2;
-}
-
-.options-svg {
-  height: 18.75px;
+.grey-svg {
   fill:rgb(136, 153, 166);
 }
 
-.dots-svg {
-  height: 22px;
-  fill: white;
+.svg-18 {
+  height: 18.75px;
 }
 
-.search-svg {
-  height: 18px;
-  fill: white;
+.svg-22 {
+  height: 22px;
 }
+
+.svg-26 {
+  height: 26.5px;
+}
+
+.svg-30 {
+  height: 30px;
+}
+
+.grey {
+  color: rgb(136, 153, 166);
+}
+
+
+/* ----Banner / Header ---- */
 
 .banner {
   max-width: 275px;
   padding: 0 10px;
-}
-
-body {
-  display: flex;
-}
-
-.main-container {
-  display: flex;
 }
 
 .navbar {
@@ -94,12 +94,11 @@ body {
 }
 
 .navbar-logo-button:hover {
-  background-color: #162D40;
+  background-color: var(--blue-hover-background);
   cursor: pointer;
 }
 
 .navbar-main-button > div {
-  display: flex;
   align-items: center;
   padding: 10px 30px 10px 10px;
   width: fit-content;
@@ -109,15 +108,15 @@ body {
 
 .navbar-main-button > div:hover {
   cursor: pointer;
-  background-color: #162D40;
+  background-color: var(--blue-hover-background);
 }
 
 .navbar-main-button > div:hover > svg {
-  fill: rgb(29, 161, 242);
+  fill: var(--blue-color);
 }
 
 .navbar-main-button > div:hover > span {
-  color: rgb(29, 161, 242);
+  color: var(--blue-color);
 }
 
 .navbar-main-button-title {
@@ -128,7 +127,7 @@ body {
 
 .navbar-button-span-div {
   border-radius: 50px;
-  background-color: rgb(29, 161, 242);
+  background-color: var(--blue-color);
   text-align: center;
   margin-right: 40px;
   padding: 15px 5px;
@@ -142,18 +141,17 @@ body {
   padding: 16px 15px 13px 15px;
   border-radius: 50%;
   width: fit-content;
-  background-color: rgb(29, 161, 242);
+  background-color: var(--blue-color);
 }
 
 .side-profile-div-button {
-  display: flex;
   align-items: center;
   padding: 12px;
   border-radius: 50px;
 }
 
 .side-profile-div-button:hover {
-  background-color: #162D40;
+  background-color: var(--blue-hover-background);
   cursor: pointer;
 }
 
@@ -170,10 +168,6 @@ body {
   font-weight: 100;
 }
 
-.grey {
-  color: rgb(136, 153, 166);
-}
-
 .side-profile-div-etc {
   margin-left: 100px
 }
@@ -182,7 +176,7 @@ body {
   height: 18.5px;
 }
 
-/* ---- Main center ---- */
+/* ---- Main / Twitter thread / Center div ---- */
 
 .main-center-div {
   border-bottom: 1px solid #344452;
@@ -192,7 +186,6 @@ body {
 }
 
 .main-center-title-div {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
@@ -210,7 +203,7 @@ body {
 
 .main-center-img:hover {
   cursor: pointer;
-  background-color: #162D40;
+  background-color: var(--blue-hover-background);
 }
 
 .main-center-input-div {
@@ -219,22 +212,16 @@ body {
   padding: 6px 16px;
 }
 
-.main-center-input {
-  display: flex;
-}
-
 .main-center-input-profile {
   margin-right: 15px;
 }
 
 .main-center-input-container-box-footer {
-  display: flex;
   flex-direction: column;
   width: 100%;
 }
 
 .main-center-input-box {
-  display: flex;
   align-items: center;
   height: 60px;
 }
@@ -246,7 +233,6 @@ body {
 }
 
 .main-center-input-footer {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 15px;
@@ -254,7 +240,6 @@ body {
 }
 
 .main-center-input-footer-options {
-  display: flex;
   align-items: center;
 }
 
@@ -265,7 +250,7 @@ body {
 
 .main-center-input-footer-options > div:hover {
   cursor: pointer;
-  background-color: #162D40;
+  background-color: var(--blue-hover-background);
 }
 
 .main-center-input-footer-button {
@@ -279,8 +264,6 @@ body {
 .main-center-input-footer-button > span {
   color: #878E95;
 }
-
-
 
 .main-center-separator-div {
   height: 12px;
@@ -329,11 +312,11 @@ body {
 }
 
 .main-center-tweet-footer-answer:hover {
-  background-color: #162D40;
+  background-color: var(--blue-hover-background);
 }
 
 .main-center-tweet-footer-answer:hover > svg {
-  fill: rgb(29, 161, 242);
+  fill: var(--blue-color);
 }
 
 .main-center-tweet-footer-retweet:hover {
@@ -353,11 +336,11 @@ body {
 }
 
 .main-center-tweet-footer-share:hover {
-  background-color: #162D40;
+  background-color: var(--blue-hover-background);
 }
 
 .main-center-tweet-footer-share:hover > svg {
-  fill: rgb(29, 161, 242);
+  fill: var(--blue-color);
 }
 
 .main-center-tweet-id > span {
@@ -380,12 +363,12 @@ body {
 }
 
 .main-center-tweet-etc:hover {
-  background-color: #162D40;
+  background-color: var(--blue-hover-background);
   cursor: pointer;
 }
 
 .main-center-tweet-etc:hover > svg {
-  fill: rgb(29, 161, 242);
+  fill: var(--blue-color);
 }
 
 .tweet-name-link {
@@ -406,6 +389,9 @@ body {
   width: 85%;
   margin-top: 15px;
 }
+
+
+/* ---- Sidebar / Tendances / Suggestions ---- */
 
 .main-sidebar-div {
   padding-left: 30px;
@@ -489,7 +475,7 @@ body {
 .main-sidebar-tendances-more > span, .main-sidebar-suggestions-more > span {
   font-size: 15px;
   font-weight: 100;
-  color: rgb(29, 161, 242);
+  color: var(--blue-color);
 }
 
 .main-sidebar-tendances-header-settings {
@@ -499,7 +485,7 @@ body {
 
 .main-sidebar-tendances-header-settings:hover {
   cursor: pointer;
-  background-color: #162D40;
+  background-color: var(--blue-hover-background);
 }
 
 .main-sidebar-suggestions-header {
@@ -529,7 +515,7 @@ body {
 
 .main-sidebar-suggestions-card-body-button {
   padding: 6px 15px;
-  border: 1px solid rgb(29, 161, 242);
+  border: 1px solid var(--blue-color);
   border-radius: 18px;
 }
 
@@ -539,7 +525,7 @@ body {
 }
 
 .main-sidebar-suggestions-card-body-button > div > span {
-  color: #1DA1F2;
+  color: var(--blue-color);
 }
 
 .main-sidebar-suggestions-card-id > span {
@@ -575,7 +561,8 @@ body {
   font-weight: 100;
 }
 
-/* --- Responsive --- */
+
+/* --- Media Queries / Responsive --- */
 
 @media screen and (max-width: 1280px) {
   .navbar-main-button-title {
