@@ -1,5 +1,5 @@
 # twitter-copy
-A replica of Twitter's home page (with dark mode obviously) make with HTML and CSS. The page is fully responsive, I used CSS variables to refactoring a bit.
+A replica of Twitter's home page (with dark mode obviously) made with HTML and CSS. The page is fully responsive, I used CSS variables to refactoring a bit.
 
 ![](images/twittercopy3.png)
 
